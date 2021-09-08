@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/angularbuilders/Bootcamps/compare/v0.0.3...v0.0.4) (2021-09-08)
+
+
+### Features
+
+* get manfred branding ([4165061](https://github.com/angularbuilders/Bootcamps/commit/41650619cf1ebd7ce52c084f4c35bbe2f1d5e17d))
+
 ### [0.0.3](https://github.com/angularbuilders/Bootcamps/compare/v0.0.2...v0.0.3) (2021-09-08)
 
 
