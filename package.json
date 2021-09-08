@@ -10,7 +10,7 @@
     "prerelease": "standard-version ",
     "release": "git push --follow-tags origin main",
     "predeploy": "npm run release",
-    "deploy": "ng deploy --base-href=/bootcamps/"
+    "deploy": "ng deploy --base-href=/Bootcamps/"
   },
   "private": true,
   "dependencies": {
