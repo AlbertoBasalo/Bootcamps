@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiHost:
+    'https://raw.githubusercontent.com/getmanfred/bootcamps/main/bootcamps.json',
 };
 
 /*
