@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class BootcampsService {
   constructor(private http: HttpClient) {}
-  getBootcamps$(): Observable<Record<string, unknown>[]> {
-    return this.http.get<Record<string, unknown>[]>(`${environment.apiHost}`);
+  getBootcamps$(): Observable<Record<string, string>[]> {
+    return this.http.get<Record<string, string>[]>(`${environment.apiHost}`);
   }
 }

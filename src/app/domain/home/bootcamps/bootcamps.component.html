@@ -1,1 +1,26 @@
-<p>bootcamps works!</p>
+<section *ngIf="bootcamps && bootcamps.length>0;">
+  <header class="level">
+    <div class="level-left">
+      <div class="level-item">
+        <p class="title">List of {{bootcamps.length}} bootcamps</p>
+      </div>
+    </div>
+  </header>
+  <main class="columns is-multiline">
+    <ab-card *ngFor="let bootcamp of bootcamps"
+             [card]="{title: bootcamp.Name, actions:[]}"
+             class="column is-one-quarter-desktop is-half-tablet">
+      <main>
+        <p class="has-text-centered is-italic">{{ bootcamp.Organization }}</p>
+        <section>
+          <ab-tag [tag]="{ caption:'Tags', value: bootcamp.Tags  }"></ab-tag>
+          <ab-tag [tag]="{ caption:'Location', value: bootcamp.Location }"></ab-tag>
+          <ab-tag [tag]="{ caption:'Language', value: bootcamp.language }"></ab-tag>
+          <ab-tag [tag]="{ caption:'Tags', value: bootcamp.Tags }"></ab-tag>
+          <ab-tag *ngIf="bootcamp.Price"
+                  [tag]="{ caption:'Price', value: bootcamp.Price | number, units:'€'  } "></ab-tag>
+        </section>
+      </main>
+    </ab-card>
+  </main>
+</section>

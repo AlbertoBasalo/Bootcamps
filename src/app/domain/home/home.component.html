@@ -1,5 +1,6 @@
 <ab-page pageTitle="Lista de Bootcamps">
   <main>
-    <pre *ngIf="bootcamps$ | async as bootcamps">{{ bootcamps | json }}</pre>
+    <ab-bootcamps *ngIf="bootcamps$ | async as bootcamps"
+                  [bootcamps]="bootcamps"></ab-bootcamps>
   </main>
 </ab-page>

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  public bootcamps$!: Observable<Record<string, unknown>[]>;
+  public bootcamps$!: Observable<Record<string, string>[]>;
   constructor(private service: BootcampsService) {}
 
   ngOnInit(): void {

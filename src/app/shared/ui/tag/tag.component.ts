@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+export interface Tag {
+  caption: string;
+  value: unknown;
+  statusClass?: string;
+  units?: string;
+}
 @Component({
   selector: 'ab-tag',
   templateUrl: './tag.component.html',
-  styleUrls: ['./tag.component.scss']
+  styleUrls: ['./tag.component.scss'],
 })
 export class TagComponent implements OnInit {
+  @Input() tag!: Tag;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

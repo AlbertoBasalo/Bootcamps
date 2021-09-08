@@ -1,1 +1,8 @@
-<p>tag works!</p>
+<div class="mt-3"
+     *ngIf="tag">
+  <span class="">{{ tag.caption }}</span>
+  <span class="is-pulled-right">
+    <label class="tag is-light is-medium {{ tag.statusClass || 'is-info' }}">{{ tag.value }}</label> {{
+    tag.units || '' }}
+  </span>
+</div>
