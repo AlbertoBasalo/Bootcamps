@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prerelease": "standard-version ",
+    "release": "git push --follow-tags origin main",
+    "predeploy": "npm run release",
+    "deploy": "ng deploy --base-href=/bootcamps/"
   },
   "private": true,
   "dependencies": {
