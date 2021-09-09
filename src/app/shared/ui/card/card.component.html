@@ -5,7 +5,10 @@
   <main class="card-content">
     <ng-content select="main"></ng-content>
   </main>
-  <footer class="card-footer buttons are-medium">
+  <footer class="card-footer has-text-left">
+    <ng-content select="footer"></ng-content>
+  </footer>
+  <!-- <footer class="card-footer buttons are-medium">
     <ng-container *ngFor="let action of card.actions">
       <a *ngIf="action.link"
          [routerLink]="action.link"
@@ -15,5 +18,5 @@
               data-testid="command-button"
               (click)="actionClick.next(action)">{{action.caption}}</button>
     </ng-container>
-  </footer>
+  </footer> -->
 </article>

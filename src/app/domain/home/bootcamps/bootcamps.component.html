@@ -2,16 +2,16 @@
   <header class="level">
     <div class="level-left">
       <div class="level-item">
-        <p class="title">List of {{bootcamps.length}} bootcamps</p>
+        <p class="title">{{bootcamps.length}} bootcamps</p>
       </div>
     </div>
   </header>
   <main class="columns is-multiline">
     <ab-card *ngFor="let bootcamp of bootcamps"
              [card]="{title: bootcamp.Name, actions:[]}"
-             class="column is-one-quarter-desktop is-half-tablet">
+             class="column is-one-quarter-fullhd is-one-third-desktop is-half-tablet">
       <main>
-        <p class="has-text-centered is-italic">{{ bootcamp.Organization }}</p>
+        <p class="has-text-centered is-italic is-size-4 has-text-primary">{{ bootcamp.Organization }}</p>
         <section>
           <ab-tag [tag]="{ caption:'Tags', value: bootcamp.Tags  }"></ab-tag>
           <ab-tag [tag]="{ caption:'Location', value: bootcamp.Location }"></ab-tag>
@@ -21,6 +21,11 @@
                   [tag]="{ caption:'Price', value: bootcamp.Price | number, units:'€'  } "></ab-tag>
         </section>
       </main>
+      <footer *ngIf="bootcamp.URL">
+        <a [href]="bootcamp.URL"
+           class="card-footer-item is-size-4 is-underlined"
+           target="_blank">Visitar web</a>
+      </footer>
     </ab-card>
   </main>
 </section>

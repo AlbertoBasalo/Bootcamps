@@ -1,11 +1,43 @@
-<ab-page pageTitle="Bootcamps">
+<ab-page pageTitle="Projecto demo creado con Angular">
   <main>
-    <pre>
-      <li>Proyecto demo creado por <a href="https://twitter.com/albertobasalo"
-        target="_blank">Alberto Basalo</a>  </li>
-      <li>Facilitador de búsqueda <a href="https://github.com/getmanfred/bootcamps/blob/main/bootcamps.json"> bootcamps</a></li>
-      <li>Con los datos propiedad de <a href="https://www.getmanfred.com/"
-        target="_blank">Get Manfred</a>  </li>
-    </pre>
+    <ab-card [card]="{ title: 'Desarrollado por Alberto Basalo', actions: [] }">
+      <main>
+        <p class="has-text-centered is-italic is-size-4">
+          Advisor and instructor on Angular.Builders
+        </p>
+        <section class="is-size-5">
+          <p>
+            <a href="https://twitter.com/albertobasalo"
+               target="_blank">Sígueme en Twitter</a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/albertobasalo/"
+               target="_blank">Contacta conmigo en LinkedIn</a>
+          </p>
+        </section>
+      </main>
+    </ab-card>
+    <ab-card [card]="{ title: 'Con los datos facilitados por Manfred', actions: [] }">
+      <main>
+        <p class="has-text-centered is-italic is-size-4">
+          Gestión de talento
+        </p>
+        <section class="is-size-5">
+          <p>
+            <a href="https://github.com/getmanfred/bootcamps/blob/main/bootcamps.json"
+               target="_blank">Consulta los datos en bruto</a>
+          </p>
+          <p>
+            <a href="https://www.getmanfred.com/"
+               target="_blank">Visita Manfred</a>
+          </p>
+        </section>
+      </main>
+    </ab-card>
+    <!-- <pre>
+      <li>Basado en los <a href="https://github.com/getmanfred/bootcamps/blob/main/bootcamps.json"  target="_blank">datos de bootcamps</a> </li>
+      <li>Mantenidos y propiedad de <a href="https://www.getmanfred.com/" target="_blank">Get Manfred</a>  </li>
+      <li>Consulta el <a href="https://github.com/angularbuilders/Bootcamps" target="_blank">código fuente</a>  </li>
+    </pre> -->
   </main>
 </ab-page>
