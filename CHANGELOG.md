@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/angularbuilders/Bootcamps/compare/v0.0.4...v0.0.5) (2021-09-09)
+
+
+### Features
+
+* branding ([681a651](https://github.com/angularbuilders/Bootcamps/commit/681a651710cf0e6eb7702897b2013dc9374660a9))
+
 ### [0.0.4](https://github.com/angularbuilders/Bootcamps/compare/v0.0.3...v0.0.4) (2021-09-08)
 
 
