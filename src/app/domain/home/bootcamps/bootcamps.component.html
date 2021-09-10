@@ -5,6 +5,20 @@
         <p class="title">{{bootcamps.length}} bootcamps</p>
       </div>
     </div>
+    <div class="level-right">
+      <button class="button level-item"
+              (click)="sort('price')">Ordenar por precio</button>
+      <button class="button level-item"
+              (click)="sort('tags')">Ordenar por Tags</button>
+      <input #searchInput
+             class="input is-medium  m-4"
+             type="text"
+             placeholder="🔎 "
+             (keyup)="searchByText(search.value)"
+             autocomplete="off"
+             aria-label="Search"
+             #search>
+    </div>
   </header>
   <main class="columns is-multiline">
     <ab-card *ngFor="let bootcamp of bootcamps"
