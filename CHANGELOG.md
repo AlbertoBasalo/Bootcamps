@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/angularbuilders/Bootcamps/compare/v0.0.5...v0.0.6) (2021-09-10)
+
+
+### Features
+
+* basic sort and filter ([543d5a4](https://github.com/angularbuilders/Bootcamps/commit/543d5a4498fe8471166a8b4377366461def8c95f))
+
 ### [0.0.5](https://github.com/angularbuilders/Bootcamps/compare/v0.0.4...v0.0.5) (2021-09-09)
 
 
