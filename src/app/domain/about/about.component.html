@@ -1,36 +1,34 @@
 <ab-page pageTitle="Projecto demo creado con Angular">
-  <main>
-    <ab-card [card]="{ title: 'Desarrollado por Alberto Basalo', actions: [] }">
+  <main class="columns is-multiline">
+    <ab-card class="column is-half-tablet"
+             [card]="{ title: 'Desarrollado por Alberto Basalo', actions: [] }">
       <main>
         <p class="has-text-centered is-italic is-size-4">
           Advisor and instructor on Angular.Builders
         </p>
-        <section class="is-size-5">
-          <p>
-            <a href="https://twitter.com/albertobasalo"
-               target="_blank">Sígueme en Twitter</a>
-          </p>
-          <p>
-            <a href="https://www.linkedin.com/in/albertobasalo/"
-               target="_blank">Contacta conmigo en LinkedIn</a>
-          </p>
-        </section>
+        <footer class="is-size-5">
+          <a class="card-footer-item button is-primary is-outlined is-rounded is-medium m-6"
+             href="https://twitter.com/albertobasalo"
+             target="_blank">Sígueme en Twitter</a>
+          <a class="card-footer-item button is-primary is-outlined is-rounded is-medium m-6"
+             href="https://www.linkedin.com/in/albertobasalo/"
+             target="_blank">Contacta conmigo en LinkedIn</a>
+        </footer>
       </main>
     </ab-card>
-    <ab-card [card]="{ title: 'Con los datos facilitados por Manfred', actions: [] }">
+    <ab-card class="column is-half-tablet"
+             [card]="{ title: 'Con los datos facilitados por Manfred', actions: [] }">
       <main>
         <p class="has-text-centered is-italic is-size-4">
           Gestión de talento
         </p>
         <section class="is-size-5">
-          <p>
-            <a href="https://github.com/getmanfred/bootcamps/blob/main/bootcamps.json"
-               target="_blank">Consulta los datos en bruto</a>
-          </p>
-          <p>
-            <a href="https://www.getmanfred.com/"
-               target="_blank">Visita Manfred</a>
-          </p>
+          <a class="card-footer-item button is-primary is-outlined is-rounded is-medium m-6"
+             href="https://github.com/getmanfred/bootcamps/blob/main/bootcamps.json"
+             target="_blank">Consulta los datos en bruto</a>
+          <a class="card-footer-item button is-primary is-outlined is-rounded is-medium m-6"
+             href="https://www.getmanfred.com/"
+             target="_blank">Visita Manfred</a>
         </section>
       </main>
     </ab-card>
